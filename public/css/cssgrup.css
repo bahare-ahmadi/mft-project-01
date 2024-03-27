@@ -1,0 +1,94 @@
+/* .ampel{
+    width:100px;
+    height: 200px;
+    background-color: rgb(37, 32, 32);
+    padding-top:40px;
+    border-radius: 10px;
+    margin :50px auto;
+
+  
+}
+.ampel:hover .green{
+    
+    background-color: green;
+    transition:1000ms;
+}
+.ampel:hover .yellow{
+    
+    background-color:yellow;
+    transition:1000ms;
+    transition-delay: 1000ms;
+
+}
+.ampel:hover .red{
+    
+    background-color: red;
+    transition:1000ms;
+    transition-delay: 2000ms;
+}
+
+
+
+
+
+.green,
+.yellow,
+.red{
+    width:50px;
+    height: 50px;
+    display: inline-block;
+    margin-left: 20px;
+    border-radius: 50%;
+
+}
+.yellow{
+    background-color: rgb(205, 205, 190);
+}
+.green{
+    background-color: rgb(163, 179, 163);
+}
+.red{
+    background-color: rgb(230, 220, 220);
+
+    */
+@font-face {
+  font-family: DanceFont;
+  src: url("../../font/Scriptinapro-71lE.otf");
+}
+:root {
+  --fontFarsi: DanceFont;
+}
+.beautiful-p {
+  font-family: var(--fontFarsi);
+  font-size: 30px;
+}
+
+.image {
+    display: block;
+  width: 300px;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+  transition:300ms all;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:hover {
+    width: 400px;
+    filter: blur(10px);
+    
+  }
+  
+}
+.maindiv{
+    width: 100vw;
+    height: 100px;
+    background-color: antiquewhite;
+    display: flex;
+ 
+    .child{
+        width: 50px;
+        height: 50px;
+        background-color: aquamarine;
+        margin: 5px;
+    }
+}
